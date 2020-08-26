@@ -1,5 +1,5 @@
 // If library is needed, add library
-// @Library('JENKINS_COMMONS') _
+@Library('JENKINS_COMMONS') _
 
 pipeline {
   agent any
