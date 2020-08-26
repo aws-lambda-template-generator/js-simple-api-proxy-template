@@ -32,5 +32,4 @@ module.exports.example = async(event, context, callback) => {
   };
 
   callback(null, output);
-
 };

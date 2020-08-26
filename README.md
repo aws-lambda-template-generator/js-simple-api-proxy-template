@@ -38,7 +38,23 @@ npm i
 Deployment can be done through the local machine by running Serverless command. For production, it is recommended to use a CD/CI tool such as Jenkins. AWS CLI must be configured with the appropriate credental ([Configureing the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)).
 
 ```bash
-sls deploy --stage dev
+# nonprod
+sls deploy --stage nonprod # if you have serverless installed globally (npm i -g serverless)
+npm run deploy -- --stage nonprod
+
+# prod
+sls deploy --stage prod
+npm run deploy -- --stage prod
+```
+
+To remove run the command below.
+
+```bash
+sls remove --stage nonprod
+
+# or
+
+npm run remove -- --stage nonprod
 ```
 
 ## (4) Unit testing and code coverage
